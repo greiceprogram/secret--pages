@@ -1,224 +1,91 @@
-    body {
-        Color: blueviolet;
-        /*letra*/
-        background-color: whitesmoke;
-        /*Fundo da página */
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    /* Botão ao topo*/
-    
-    .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        width: 50px;
-        height: 50px;
-        background-color: #CCCCCC;
-        text-decoration: none;
-        border-radius: 30px;
-    }
-    
-    .btn::after {
-        content: "↑";
-        font-size: 35px;
-        font-weight: bold;
-        color: black;
-        transition: margin-top 250ms;
-    }
-    
-    .btn:hover::after {
-        margin-top: -8px;
-    }
-    
-    ul {
-        display: flex;
-        /*Separar*/
-        justify-content: space-evenly;
-        list-style: none;
-        /*tira a bolinha da lista*/
-        align-items: center;
-        /*alinhamento centro*/
-        padding: 16px;
-        /*distanciamento do topo*/
-        background-image: linear-gradient(90deg, #C0C0C0 0%, #999999 50.52%, #666666 100%);
-    }
-    
-    .topo ul {
-        background-image: linear-gradient(90deg, #C0C0C0 0%, #999999 50.52%, #666666 100%);
-    }
-    
-    a {
-        color: white;
-        text-align: center;
-        text-decoration: none;
-    }
-    
-    img {
-        /*banner amazon*/
-        width: 650px;
-        height: 150px;
-        justify-content: center;
-    }
-    
-    .topo {
-        background-color: darkgrey;
-        /*fundo do nav*/
-    }
-    
-    .center {
-        text-align: center;
-        background-color: black;
-        /*fundo da imagem header*/
-    }
-    
-    .center h2 {
-        /*texto inicial*/
-        letter-spacing: -0.47px;
-        color: white;
-        text-align: center;
-        text-decoration: underline overline;
-        /*traço em cima e em baixo das palavras*/
-    }
-    
-    .video {
-        /*card vídeo*/
-        display: flex;
-        width: auto;
-        color: black;
-        padding-top: 4px;
-        border-radius: 10px;
-        background-image: linear-gradient(90deg, #CCCCCC 0%, #CCCCCC 50.52%, #333333 100%);
-        /*fundo do vídeo*/
-        padding: 32px;
-        padding-top: 14px;
-        border-radius: 8px;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        /*ajusta a posição do elemento para baixo*/
-    }
-    
-    iframe {
-        /*video*/
-        justify-content: space-between;
-        /*espaçamento lado a lado*/
-        margin: 15px;
-        padding: 10px;
-        border-radius: 15%;
-    }
-    
-    img.promo {
-        width: 350px;
-        height: 150px;
-        object-fit: contain;
-    }
-    
-    main {
-        max-width: 580px;
-        width: 90%;
-        margin: 32px auto;
-        display: flex;
-        gap: 24px;
-    }
-    
-    .conteudo {
-        /*bordas do fundo do card*/
-        color: white;
-        background-image: linear-gradient(90deg, #C0C0C0 0%, #999999 50.52%, #666666 100%);
-        padding-top: 4px;
-        border-radius: 10px;
-    }
-    
-    .conteudo p {
-        letter-spacing: -0.18px;
-        color: whitesmoke;
-    }
-    
-    .conteudo ul {
-        /*fundo card livros*/
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        margin-top: 24px;
-        background-image: url(img/fundolivro.png);
-    }
-    
-    .Book-list img {
-        /*card livro*/
-        width: 90px;
-        height: 132px;
-        border-radius: 8px;
-    }
-    
-    .details {
-        /*informações de detalhes/ descrição do livro*/
-        display: none;
-        color: black;
-        background-color: rgba(255, 255, 255, 0.9);
-        position: absolute;
-        z-index: 10;
-        transform: translate(0, -80px);
-        width: 90px;
-        text-align: center;
-        max-height: 80px;
-        border: 1px solid black;
-        border-radius: 8px;
-    }
-    
-    .book .details h6 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: normal;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .book:hover+.details {
-        display: block;
-    }
-    
-    .Book-list img:hover {
-        transform: scale(1.1);
-    }
-    
-    footer {
-        text-align: center;
-    }
-    
-    @keyframes fromTop {
-        from {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    @keyframes fromBottom {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    @media (max-width:600px) {
-        /*responsivo*/
-        img {
-            max-width: 100%;
-            object-fit: contain;
-            /*bloqueio de distorção da imagem*/
-        }
-        .Book-list img {
-            /*card livro*/
-            width: 276px;
-            height: 461px;
-        }
-    }
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Libre Baskerville", serif;
+    text-decoration: none;
+} 
+
+body{
+    width: 100%;
+    background-color: black;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+header > h2 {
+   
+    font-size: 50px;
+    color: gray;
+    text-shadow: 1px 2px whitesmoke; 
+}
+
+header > img{
+    width: 80px;
+}
+
+nav{
+    display: flex;
+    gap: 55px;
+}
+
+nav > a{
+    font-size: 20px;
+    color: white;
+}
+
+a:hover{
+    color:  red;
+}
+
+h1:hover{
+    color:  red;
+}
+
+section{
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+   
+
+}
+
+.paragraph{
+    flex-direction: column;
+    font-size: 45px;
+    align-items: center;
+}
+
+p{
+    margin-top: 30px;
+}
+
+  section > img {
+   
+        width: 450px;
+        height: 450px;
+        margin-left: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;        
+  }
+
+
+  img:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+  }
