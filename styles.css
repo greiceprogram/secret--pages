@@ -84,8 +84,50 @@ p{
         transition: transform .5s ease;        
   }
 
-
   img:hover{
     -webkit-transform: scale(1.1);
    transform: scale(1.1);
   }
+
+  ul{
+   
+    list-style: none;
+}
+
+
+section ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+
+.Book-list img {
+    width: 130px;
+    border-radius: 15px;
+}
+
+.Book-list img:hover{
+    transform: scale(1.1);
+}
+
+.Book-list-Bel img {
+    border-radius: 50%;
+    width: 70px;
+
+}
+
+.Book-list-Bel img:hover{
+    transform: scale(1.1);
+}
+
+.social-list img:hover{
+    transform: scale(1.1);
+}
+
+/* animation */
+
+header div {
+    animation: fromTop .7s .2s backwards;
+}
