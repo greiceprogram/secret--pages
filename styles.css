@@ -131,3 +131,27 @@ section ul{
 header div {
     animation: fromTop .7s .2s backwards;
 }
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+
+
+@media (max-width:600px) {
+    /*responsivo*/
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        /*bloqueio de distorção da imagem*/
+    }
+    .Book-list img {
+        /*card livro*/
+        width: 276px;
+        height: 461px;
+    }
+}

@@ -14,9 +14,7 @@ O Blog de Contos Eróticos foi criado com o objetivo de oferecer um ambiente seg
 
 - **Histórias Provocantes:** Explore histórias que desafiam convenções e tabus, mergulhando em temas provocantes e controversos.
 
-## Como Contribuir
 
-Se você é um escritor talentoso ou simplesmente tem uma história erótica para contar, você é bem-vindo para contribuir com o meu blog! Aqui estão algumas maneiras de colaborar:
 
 ## Contato
 
