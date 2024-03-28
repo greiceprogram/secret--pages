@@ -59,8 +59,6 @@ section{
     align-items: center;
     overflow: hidden;
     color: white;
-   
-
 }
 
 .paragraph{
@@ -69,9 +67,43 @@ section{
     align-items: center;
 }
 
-p{
+
+.carrousel{
     margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+
+  
+.sold > img {
+    width: 130px;
+    border-radius: 15px;
+
 }
+  
+  .book-list {
+    overflow: hidden;
+    align-self: center;
+  }
+  
+  .sold {
+    margin-top: 10px;
+    display: flex;
+    gap: 80px;
+    grid-auto-columns: 15rem;
+    animation: scroll 25s linear infinite;
+  }
+  
+  
+  @keyframes scroll {
+    to {
+      translate: calc(-4 * 15rem);
+    }
+  } 
 
   section > img {
    
