@@ -28,7 +28,7 @@ Estou ansiosa para compartilhar muitas histórias excitantes com você. Aproveit
 Sensualmente, 💋📖✨
 
 
-<img src="./pginicial.png">
+<img src="./mobile.gif">
 
 
 
