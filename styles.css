@@ -1,55 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-* {
+
+*{
     margin: 0;
     padding: 0;
-    font-family: "Libre Baskerville", serif;
     text-decoration: none;
-} 
+    font-family: "Libre Baskerville", serif;
 
-body{
-    width: 100%;
-    background-color: black;
+}
+.menu {
+    background-image: url('https://cdnx.jumpseller.com/bracara-wine/image/31358329/rose-gc0854192a_1920.jpg.jpg?1675270982'); 
+    background-size: cover;
+    padding: 100px;
 }
 
-header{
-    width: 100%;
-    height: 100px;
+.menu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu nav ul li {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-header > h2 {
-   
-    font-size: 50px;
-    color: gray;
-    text-shadow: 1px 2px whitesmoke; 
+.menu nav ul li a {
+    font-size: 25px;
+    color: white; 
+    padding: 10px; 
 }
 
-header > img{
-    width: 80px;
-}
-
-nav{
-    display: flex;
-    gap: 55px;
-}
-
-nav > a{
-    font-size: 20px;
-    color: white;
-}
-
-a:hover{
+.menu nav ul li a:hover{
     color:  red;
 }
 
 h1:hover{
     color:  red;
+    gap: 2px;
 }
 
 
@@ -63,11 +52,12 @@ h1:hover{
 }
 
 .paragraph{
-    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
     font-size: 45px;
     align-items: center;
 }
-
 
 .carrousel{
     margin-top: 30px;
@@ -78,120 +68,34 @@ h1:hover{
     justify-content: flex-start;
     align-items: flex-start;
     }
-
-  
-.sold > img {
-    width: 130px;
-    border-radius: 15px;
-
-}
   
   .book-list {
     overflow: hidden;
     align-self: center;
   }
-  
+
   .sold {
     margin-top: 10px;
     display: flex;
-    gap: 80px;
+    gap: 20px;
     grid-auto-columns: 15rem;
     animation: scroll 25s linear infinite;
   }
-  
-  
-  @keyframes scroll {
-    to {
-      translate: calc(-4 * 15rem);
-    }
-  } 
 
-  section > img {
-   
-        width: 450px;
-        height: 450px;
-        margin-left: 50px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        -webkit-transition: -webkit-transform .5s ease;
-        transition: transform .5s ease;        
-  }
-
-  img:hover{
-    -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-  }
-
-  ul{
-   
-    list-style: none;
-}
-
-.card-list{
-    padding-top: 35px;
-    padding-bottom: 35px;
-}
-
-.card-list > h1{
-    padding-bottom: 5px;
-    font-size: 30px;
-    color: white;
-}
-
-
-section ul{
-    border: 1px solid;
-    border-top-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-}
-
-.Book-list img {
-    margin-top: 50px;
-    padding-left: 50px;
+  .sold > img {
     width: 130px;
     border-radius: 15px;
 }
 
-.Book-list img:hover{
-    transform: scale(1.1);
-}
-
-.Book-list-Bel img {
-    border-radius: 50%;
-    width: 70px;
-
-}
-
-.Book-list-Bel img:hover{
-    transform: scale(1.1);
-}
-
-.social-list img:hover{
-    transform: scale(1.1);
-}
-
-/* animation */
-
-header div {
-    animation: fromTop .7s .2s backwards;
-}
-
-aside{
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
-
-.video{
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid;
-    border-top-color: white;
-    
+img:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+  }
+  
+  .video {
+    float: right;
+    width: 300px; 
+    margin-left: 20px; 
 }
 
 .video > h1{
@@ -199,8 +103,14 @@ aside{
     font-size: 30px;
     color: white;
 }
+ 
+  @keyframes scroll {
+    to {
+      translate: calc(-4 * 15rem);
+    }
+  } 
 
-.autores{
+/* .autores{
     border: 1px solid;
     border-top-color: white;
     height: 350px;
@@ -287,7 +197,7 @@ section > h1{
 .text > p{
     text-align: center;
     color: white;
-}
+} */
 
 
 
@@ -314,7 +224,7 @@ footer{
 }
 
 
-@media(max-width: 430px){
+/* @media(max-width: 430px){
     header{
         width: 100%;
     }
@@ -423,6 +333,6 @@ footer{
         margin-top: 50px;
 
      }
-}
+} */
 
 
