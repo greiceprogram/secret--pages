@@ -118,9 +118,17 @@ img:hover{
   
   .video {
     float: right;
-    width: 300px; 
-    margin-left: 5px; 
+    width: 250px;  
+    border: 1px solid blue;
+    margin-right: 100px;
 }
+
+.vd{
+    border: 1px solid yellow;
+    width: 250px;
+    height: 210px;
+}
+
 
 .video > h1{
     padding-bottom: 5px;
@@ -242,94 +250,3 @@ footer{
     color: black;
     font-size: 15px;
 }
-
-
-@media (max-width: 374px){
-
-    body{
-        width: 100%;
-    }
-
-    .menu{
-        width: 100%;
-    }
-
-     a:hover{
-        color:  red;
-    }
-    
-    h1:hover{
-        color:  red;
-    }
-     section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-     }
-
-     section > .bemvindos{
-        width: 100%;
-     }
-    
-
-     section > img {
-        width: 420px;
-        height: 420px;
-        
-     }
-
-     img:hover{
-        -webkit-transform: scale(1.1);
-       transform: scale(1.1);
-      }
-
-     .inicio{
-        width: 100%;
-      }
-
-     .paragraph{
-
-        font-size: 18px;
-
-     }
-
-     aside .sold{
-        width: 100%;
-     }
-
-     .book-list{
-        width: 100%;
-     }
-
-     .video{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-     }
-
-     .comentarios{
-        width: 80%;
-     }
-
-     footer > .contato{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-   
-    }
-    
-    .container > img{
-        width: 25px;
-        height: 25px;
-    }
-    
-    .finish > p{ 
-        color: black;
-        font-size: 15px;
-    }
-
-}
-
-
