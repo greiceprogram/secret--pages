@@ -119,12 +119,10 @@ img:hover{
   .video {
     float: right;
     width: 250px;  
-    border: 1px solid blue;
     margin-right: 100px;
 }
 
 .vd{
-    border: 1px solid yellow;
     width: 250px;
     height: 210px;
 }
