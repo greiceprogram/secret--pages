@@ -26,7 +26,7 @@ body{
 header{
   width: 100%;
   padding: 60px 4px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   transition: 0.5s;
@@ -78,42 +78,44 @@ header ul li a{
 .banner h1 span{
   color: red;
 }
-/* .carrousel{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    }
-  
-  .book-list {
-    overflow: hidden;
-    align-self: center;
-  }
 
-  .sold {
-    margin-top: 10px;
-    display: flex;
-    gap: 20px;
-    grid-auto-columns: 15rem;
-    animation: scroll 25s linear infinite;
-  }
-
-  .sold > img {
-    width: 130px;
-    border-radius: 15px;
+.listLivros h2{
+  text-align: center;
+  font-size: 40px;
 }
 
-img:hover{
-    -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-  }
-   */
+.listLivros .livro img{
+  width: 130px;
+  border-radius: 15px;
+  filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listLivros{
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 150px;
+}
+
+.listLivros .livro{
+  background-color: #efefef;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.listLivros .livro img:hover{
+  -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+
+.listLivros h2{
+  font-weight: 500;
+}
+
+.listLivros span{
+  color: red;
+}
   /* .video {
     float: right;
     width: 250px;  
@@ -132,6 +134,11 @@ img:hover{
     color: white;
 } */
 
+  /* section .bemvindos{
+    border: 1px solid yellow;
+  }
+
+
 
  .bemvindos { 
     color: black;
@@ -147,6 +154,7 @@ img:hover{
     gap: 20px;
     font-size: 15px;
     word-wrap: break-word;
+    border: 1px solid red;
     
    }
    .part> p{
@@ -161,42 +169,7 @@ img:hover{
     gap:15px;
    }
 
-   section ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 24px;
-    text-decoration: none;
-    padding: 60px;
-}
-
-
-ul{
-    list-style: none;
-}
-
-
-.Book-list img { 
-    width: 90px;
-    border-radius: 8px;
-}
-
-
-.Book-list img:hover{
-    transform: scale(1.1);
-}
-
-
-.social-list img:hover{
-    transform: scale(1.1);
-}
-
- 
-  @keyframes scroll {
-    to {
-      translate: calc(-4 * 15rem);
-    }
-  } 
+  */
 
   section{
     min-height: 100vh;
