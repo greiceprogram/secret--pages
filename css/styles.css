@@ -50,35 +50,6 @@ h1:hover{
 }
 
 
-.perfil > img{
-    border-radius: 250px;
-    width: 250px;
-    height: 250px;
-}
-
-
-.Inicio{
-    height: 700px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    color: white;
-}
-
-.paragraph{
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    font-size: 45px;
-    align-items: center;
-}
-
-.paragraph > h2 > h1{
-    text-decoration: none;
-    color: black;
-    border: 1px solid blue;
-}
 
 .carrousel{
     margin-top: 30px;
@@ -130,7 +101,7 @@ img:hover{
 
 .video > h1{
     padding-bottom: 5px;
-    font-size: 30px;
+    font-size: 31px;
     color: white;
 }
 
@@ -199,35 +170,97 @@ ul{
     }
   } 
 
-  .comentarios{
-    color: black;
-    background: whitesmoke;
-    background-size: cover;
-    border-radius: 10px;
-    max-width: 880px;
-    width: 90%;
-    margin: 50px;
-    padding: 30px;
+  section{
+    min-height: 100vh;
     display: flex;
-    gap: 20px;
-    font-size: 15px;
-    word-wrap: break-word;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
   }
 
-  .gap{
-    border: 2px solid #ccc; 
-    border-radius: 10px; 
-    padding: 20px;
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 40px 0;
 
   }
 
-  .gap > img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-    margin: auto;
+  .slide-content{
+    margin: 0 40px;
+  }
+  .card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
   }
 
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px 25px 0 25px;
+  }
+
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+  }
+
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+  }
+
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+  }
+
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
 
 footer{
     width: 100%;

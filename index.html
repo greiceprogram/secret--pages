@@ -8,16 +8,16 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./animation.css" media="screen" />
     <link rel="icon" href="./img/favicon.ico" />
-    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+
     <title>Blog</title>
 
 </head>
 
 <body>
     <header class="menu">
-        <div class="perfil">
-            <img src="./img/perfil.png" alt="">
-        </div>
         <nav>
             <ul>
                 <li><a href="sobre">Sobre</a></li>
@@ -27,14 +27,6 @@
             </ul>
         </nav>
     </header>
-
-    <section class="inicio">
-        <span>
-            <div class="paragraph">
-                <h2> Entre Páginas &  <h1> Desejos</h1></h2>
-            </div>
-        </span>
-    </section>
 
     <aside class="carrousel">
         <div class="book-list">
@@ -91,41 +83,79 @@
     </div>
 </section>
 
-<section class="cardbook">
-    <div class="book-card">
+<section>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/736x/1c/30/c2/1c30c25fc1b09887cbdd92413bceca1b.jpg" alt="avatar" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Kelly/Minas Gerais</h2>
+                        <p class="description"> Dois criminosos e um propósito. <br><br> ..O livro "Desejada" da Sylvia Day até agora não me decepcionou. Recomendo pra quem gosta de 
+                            romance de época com intriga e muitos suspeitos.</p>
+
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img src="https://baixardesign.com.br/fileupload/box/1334751839293/Avatar%203D%20Mulher%20Estilo%20professora%20PNG6.png" alt="avatar" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Alice /Campo Grande</h2>
+                        <p class="description"> ahhh <br><br> Estou lendo esses livros fora da ordem q foram escritos, mas uma história não depende da outra,só pego leves spoiler sem querer...
+                            Amei essa história, o galã apaixonado pela garota escondida embaixo de bastante roupa</p>
+
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/fotos-premium/jovem-mulher-afro-americana-com-cabelos-ondulados-pretos-isolados-em-fundo-branco_856795-19369.jpg" alt="avatar" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Rosana /Rio de Janeiro</h2>
+                        <p class="description"> Um bom romance... <br><br>
+                            ...."Por um momento apenas" Achei a história super simpática. Gostei do casal, dos seus doces momentos de conexão e da promessa de felicidade que o amor deles, 
+                            cúmplice e incondicional.</p>
+
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4cafadf1-9557-44d9-b050-24d718bf7c4b/dehogsh-f705e782-32d0-4ef1-9425-d890aeaa7183.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRjYWZhZGYxLTk1NTctNDRkOS1iMDUwLTI0ZDcxOGJmN2M0YlwvZGVob2dzaC1mNzA1ZTc4Mi0zMmQwLTRlZjEtOTQyNS1kODkwYWVhYTcxODMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-n_3iN-WVjwqgh5S81XSPWEe6cg1y_rnIEub81fK0JI" alt="avatar" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Gabriela /São Paulo</h2>
+                        <p class="description"> Uma obra que pega fogo kkk <br><br>
+                            ....O livro 356 dias se trata de uma leitura bem intrigante, 
+                            principalmente no aspecto ?quente? da coisa kkkk</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         
-
+        <div class="swiper-pagination"></div>
     </div>
 </section>
 
-<section class="comentarios"> 
-    <div class="gap">
-        <img src="https://i.pinimg.com/736x/1c/30/c2/1c30c25fc1b09887cbdd92413bceca1b.jpg" alt="">
-        <h6>Kelly /Minas Gerais</h6> <br>
-        <h5>Dois criminosos e um propósito.</h5><br>
-        <p> ....O livro "Desejada" da Sylvia Day até agora não me decepcionou. Recomendo pra quem gosta de 
-            romance de época com intriga e muitos suspeitos.</p>
-
-    </div>
-
-    <div class="gap">
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4cafadf1-9557-44d9-b050-24d718bf7c4b/dehogsh-f705e782-32d0-4ef1-9425-d890aeaa7183.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRjYWZhZGYxLTk1NTctNDRkOS1iMDUwLTI0ZDcxOGJmN2M0YlwvZGVob2dzaC1mNzA1ZTc4Mi0zMmQwLTRlZjEtOTQyNS1kODkwYWVhYTcxODMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-n_3iN-WVjwqgh5S81XSPWEe6cg1y_rnIEub81fK0JI" alt="">
-        <h6>Gabriela /São Paulo</h6> <br>
-        <h5>Uma obra que pega fogo kkk</h5><br>
-        <p> ....O livro 356 dias se trata de uma leitura bem intrigante, 
-            principalmente no aspecto ?quente? da coisa kkkk</p>
-
-    </div>
-
-    <div class="gap">
-        <img src="https://img.freepik.com/fotos-premium/jovem-mulher-afro-americana-com-cabelos-ondulados-pretos-isolados-em-fundo-branco_856795-19369.jpg" alt="">
-        <h6>Rosana /Rio de Janeiro</h6> <br>
-        <h5>Um bom romance...</h5><br>
-        <p>...."Por um momento apenas" Achei a história super simpática. Gostei do casal, dos seus doces momentos de conexão e da promessa de felicidade que o amor deles, 
-            cúmplice e incondicional.</p>
-
-    </div>
-</section>
 
 
         <footer id="contato">
@@ -141,5 +171,8 @@
         </footer>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
 
 </html>
