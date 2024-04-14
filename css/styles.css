@@ -4,53 +4,78 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    box-sizing: border-box;
     font-family: "Libre Baskerville", serif;
-
 }
-body{
-    background: whitesmoke;
+
+.container{
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header{
-    height: 380px;
-}
-.menu {
-    background-image: url(./img/aventura.png); 
-    background-size: cover;
-    padding: 50px;
-}
-
-.menu nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  padding: 60px 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
 }
 
-.menu nav ul li {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+header.rolagem{
+  background-color: whitesmoke;
+  padding: 20px 4px;
 }
 
-.menu nav ul li a {
-    font-size: 25px;
-    color: black; 
-    padding: 5px; 
-    font-weight: bold;
+header.rolagem a, header.rolagem i{
+  color:black
 }
 
-.menu nav ul li a:hover{
-    color:  red;
+header  i{
+  font-size: 30px;
+  color: white;
+}
+header ul{
+  list-style-type: none;
 }
 
-h1:hover{
-    color:  red;
-    gap: 2px;
+header ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a{
+  color: #fff;
+  text-decoration: none;
 }
 
 
 
+.banner{
+  height: 100vh;
+  background-image: url(https://www.divvino.com.br/blog/wp-content/uploads/2021/04/livro-vinho-imagem-destacada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1{
+  font-size: 4em;
+}
+
+.banner h1 span{
+  color: red;
+}
 .carrousel{
     margin-top: 30px;
     margin-bottom: 30px;
