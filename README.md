@@ -28,7 +28,8 @@ Estou ansiosa para compartilhar muitas histórias excitantes com você. Aproveit
 Sensualmente, 💋📖✨
 
 
-<img src="./mobile.gif">
+<img src="./Macbook-Air-127.0.0.1.png">
+<img src="./iPhone-13-PRO-MAX-127.0.0.1.png">
 
 
 

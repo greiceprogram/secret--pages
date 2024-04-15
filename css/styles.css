@@ -79,6 +79,23 @@ header ul li a{
   color: red;
 }
 
+
+.videoSwiper{
+  filter: drop-shadow(0 50px 20px #0009);
+  width: 50%;
+  height: 215px;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .listLivros h2{
   text-align: center;
   font-size: 40px;
@@ -115,24 +132,7 @@ header ul li a{
 
 .listLivros span{
   color: red;
-}
-  /* .video {
-    float: right;
-    width: 250px;  
-    margin-right: 100px;
-}
-
-.vd{
-    width: 250px;
-    height: 210px;
-}
-
-
-.video > h1{
-    padding-bottom: 5px;
-    font-size: 31px;
-    color: white;
-} */
+} 
 
   /* section .bemvindos{
     border: 1px solid yellow;

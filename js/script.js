@@ -16,6 +16,18 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
+
+  var swiper = new Swiper(".videoSwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   window.addEventListener("scroll", function(){
     let header = document.querySelector('#header')
     header.classList.toggle('rolagem', window.scrollY > 100)
