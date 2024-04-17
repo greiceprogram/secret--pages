@@ -52,15 +52,32 @@ header ul{
 header ul li {
   display: inline-block;
   margin: 0 40px;
+  font-weight: bold;
 }
 
 header ul li a{
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover{
   color: red;
+}
+
+h2:hover{
+  color: red;
+  cursor: pointer;
+}
+
+h3:hover{
+  color: red;
+  cursor: pointer;
+}
+
+h4:hover{
+  color: red;
+  cursor: pointer;
 }
 
 .banner{
@@ -90,9 +107,10 @@ a:hover{
   color: red;
 }
 
+
 .banner .typing-animation {
   animation: blinkCursor  500ms infinite steps(40)  
-  normal, typing 5s steps(40) 1s normal both;
+  normal, typing 8s steps(40) 1s normal both;
 }
 
 
@@ -298,6 +316,30 @@ section .videoSwiper{
   textarea{
     height: 150px;
   }
+
+  #btnVoltarAoTopo {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 24px; 
+    cursor: pointer; 
+    transition: opacity 0.3s; 
+}
+
+#btnVoltarAoTopo:hover {
+    background-color: #0056b3; 
+}
+
+#btnVoltarAoTopo:active {
+    transform: translateY(1px); 
+}
 
   footer{
     bottom: 0;
