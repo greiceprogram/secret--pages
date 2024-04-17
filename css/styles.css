@@ -286,6 +286,19 @@ section .videoSwiper{
     text-align: center;
   }
 
+  .form{ display: flex;justify-content: center;}
+  .contact{width: 100%; max-width: 500px;}
+  .box-form{display: flex;flex-direction: column;}
+  .field{
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+  }
+  textarea{
+    height: 150px;
+  }
+
   footer{
     bottom: 0;
   }
@@ -296,6 +309,10 @@ section .videoSwiper{
     }
     header{
       padding-top: 40px;
+    }
+
+    .banner{
+      text-align: none;
     }
   }
 
