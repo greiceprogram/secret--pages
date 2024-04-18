@@ -29,7 +29,7 @@ Sensualmente, 💋📖✨
 
 
 <img src="./Macbook-Air-127.0.0.1.png">
-<img src="./iPhone-13-PRO-MAX-127.0.0.1.png">
+
 
 
 

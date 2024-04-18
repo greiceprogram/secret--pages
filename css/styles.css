@@ -134,7 +134,6 @@ h4:hover{
 
 }
 
-
 section .videoSwiper{
   filter: drop-shadow(0 50px 20px #0009);
   width: 50%;
@@ -192,18 +191,11 @@ section .videoSwiper{
 .listLivros span{
   color: red;
 } 
+
 #about {
   background-color: #f9f9f9;
   padding: 50px 0;
-}
-
-.container-about {
-  width: 550px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 25px;
+  margin:100px;
 }
 
 .about-content {
@@ -211,7 +203,7 @@ section .videoSwiper{
   padding-right: 20px;
 }
 
-.about-content h2 h3 h4 {
+.about-content h2 {
   color: #333;
   font-size: 28px;
   margin-bottom: 20px;
@@ -225,8 +217,12 @@ section .videoSwiper{
 
 .about-content ul li {
   color: #666;
-  font-size: 16px;
-  line-height: 1.6;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
 }
 
 article{
@@ -235,10 +231,9 @@ article{
   display: flex;
   justify-content: center;
 }
- .text-carta h1{
-  display: flex;
-  justify-content: flex-start ;
-  align-items: flex-start;
+
+.container-about .about-content h2{
+  padding-bottom: 50px;
 }
 
 #card{
@@ -262,24 +257,23 @@ article{
 }
 
 .face img{
-  height: 250px;
+  height: 180px;
   width: 150px;
   border-radius: 10px;
 }
 
 #front{
-  /* background-color: #666; */
   transform: rotateY(180deg);
 }
 
 #back{
-  /* background-color: #333; */
   backface-visibility: hidden;
 }
 
 .flip{
   transform: rotateY(180deg);
 }
+
 
   section{
     min-height: 100vh;
@@ -370,6 +364,7 @@ article{
   textarea{
     height: 150px;
   }
+
 
   #btnVoltarAoTopo {
     display: none; 
@@ -559,4 +554,3 @@ article{
     margin-left: 0;
   }
 }
-
