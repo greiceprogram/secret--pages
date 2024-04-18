@@ -229,6 +229,58 @@ section .videoSwiper{
   line-height: 1.6;
 }
 
+article{
+  width: auto;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+}
+ .text-carta h1{
+  display: flex;
+  justify-content: flex-start ;
+  align-items: flex-start;
+}
+
+#card{
+  display: flex;
+  justify-content: center;
+
+  transform-style: preserve-3d;
+  transition: all .5s;
+}
+
+.face{
+  width: 100px;
+  height: 100px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  border-radius: 10px;
+  filter: drop-shadow(0 50px 20px #1d1819);
+}
+
+.face img{
+  height: 250px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+#front{
+  /* background-color: #666; */
+  transform: rotateY(180deg);
+}
+
+#back{
+  /* background-color: #333; */
+  backface-visibility: hidden;
+}
+
+.flip{
+  transform: rotateY(180deg);
+}
+
   section{
     min-height: 100vh;
     display: flex;
@@ -248,10 +300,12 @@ section .videoSwiper{
   .slide-content{
     margin: 0 40px;
   }
+
   .card{
     width: 320px;
     border-radius: 25px;
-    background-color: #1D1819;
+    background-color: #f9f9f9;
+    border: 1px solid red;
   }
 
   .image-content,

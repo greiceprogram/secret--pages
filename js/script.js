@@ -48,3 +48,8 @@ function voltarAoTopo() {
     document.documentElement.scrollTop = 0; /* Para navegadores que suportam rolagem suave */
 }
 
+const card = document.querySelector("#card")
+card.addEventListener("click" ,(e)=>{
+  card.classList.toggle("flip")
+})
+
