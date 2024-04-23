@@ -191,19 +191,16 @@ section .videoSwiper{
 
 #about {
   background-color: #f9f9f9;
-  padding: 50px 0;
   margin:100px;
 }
 
 .about-content {
   flex: 1;
-  padding-right: 20px;
 }
 
 .about-content h2 {
   color: #333;
   font-size: 28px;
-  margin-bottom: 20px;
 }
 
 .about-content p {
