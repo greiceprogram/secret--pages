@@ -98,7 +98,6 @@ h4:hover{
 .banner h1{
   color: black;
   font-size: 4em;
-
   white-space: nowrap;
   overflow: hidden;
 }
@@ -149,6 +148,7 @@ section .videoSwiper{
 }
 
  .card-book{
+  margin: 20px 20px 15px 30px;
   background-color: #f9f9f9;
 }
 
