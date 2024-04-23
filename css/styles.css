@@ -406,6 +406,9 @@ article{
     .container-about .about-content h2{
       font-size: 24px;
     }
+    .card-book{
+      margin: block;
+    }
   }
 
   .footer-distributed{
