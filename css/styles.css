@@ -10,6 +10,7 @@
 
 body{
   background-color: #f9f9f9;
+  cursor:url(../img/diary.png), auto;
 }
 
 .container{
@@ -148,7 +149,6 @@ section .videoSwiper{
 }
 
  .card-book{
-  margin: 20px 20px 15px 30px;
   background-color: #f9f9f9;
 }
 
@@ -352,7 +352,7 @@ article{
     padding: 10px; 
     margin-bottom: 15px;
     border: 1px solid #DDD;
-    border-radius: 5px;
+    border-radius: 30px;
   }
   textarea{
     height: 150px;
@@ -405,9 +405,6 @@ article{
 
     .container-about .about-content h2{
       font-size: 24px;
-    }
-    .card-book{
-      margin: block;
     }
   }
 
