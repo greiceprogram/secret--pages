@@ -54,7 +54,7 @@ header ul li {
   display: inline-block;
   margin: 0 40px;
   font-weight: bold;
-}
+  }
 
 header ul li a{
   color: black;
@@ -82,7 +82,7 @@ h4:hover{
 }
 
 .banner{
-  height: 50vh;
+  height: 100vh;
   background-image: url(../img/rosa1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -92,8 +92,6 @@ h4:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .banner h1{
@@ -134,22 +132,43 @@ h4:hover{
 
 }
 
-section .videoSwiper{
-  filter: drop-shadow(0 50px 20px #0009);
-  width: 50%;
+#about {
+  background-color: #f9f9f9;
+  margin:100px;
+  margin-top: 70px;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  color: #333;
+  font-size: 28px;
+}
+
+.about-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-content ul li {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
 }
 
  .card-book{
   background-color: #f9f9f9;
+  padding: 50px;
+  margin-bottom: 100px;
 }
 
 .listLivros h2{
@@ -189,91 +208,25 @@ section .videoSwiper{
   color: red;
 } 
 
-#about {
-  background-color: #f9f9f9;
-  margin:100px;
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .slide-container,
+    .form {
+        flex: auto;
+        width: 100%;
+    }
 }
 
-.about-content {
-  flex: 1;
-}
 
-.about-content h2 {
-  color: #333;
-  font-size: 28px;
-}
-
-.about-content p {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.about-content ul li {
-  color: #666;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-}
-
-article{
-  width: auto;
-  height: 35vh;
-  display: flex;
-  justify-content: center;
-}
-
-.container-about .about-content h2{
-  padding-bottom: 50px;
-}
-
-#card{
-  display: flex;
-  justify-content: center;
-
-  transform-style: preserve-3d;
-  transition: all .5s;
-}
-
-.face{
-  width: 100px;
-  height: 100px;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: absolute;
-  border-radius: 10px;
-  filter: drop-shadow(0 50px 20px #1d1819);
-}
-
-.face img{
-  height: 180px;
-  width: 150px;
-  border-radius: 10px;
-}
-
-#front{
-  transform: rotateY(180deg);
-}
-
-#back{
-  backface-visibility: hidden;
-}
-
-.flip{
-  transform: rotateY(180deg);
-}
-
-  section{
-    min-height: 80vh;
+  .box{
+    min-height: 50vh;
+    padding: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .slide-container{
@@ -286,6 +239,7 @@ article{
 
   .slide-content{
     margin: 0 40px;
+    flex: 1;
   }
 
   .card{
@@ -345,7 +299,7 @@ article{
     text-align: center;
   }
 
-  .form{ display: flex;justify-content: center;}
+  .form{ display: flex;justify-content: center; flex: 1;}
   .contact{width: 100%; max-width: 500px;}
   .box-form{display: flex;flex-direction: column;}
   .field{
@@ -353,6 +307,12 @@ article{
     margin-bottom: 15px;
     border: 1px solid #DDD;
     border-radius: 30px;
+  }
+  .field-envie{
+    border: 1px solid red;
+    border-radius: 30px;
+    padding: 10px; 
+    margin-bottom: 15px;
   }
   textarea{
     height: 150px;
@@ -523,5 +483,12 @@ article{
 
   .footer-distributed .footer-right {
     order: 2; 
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+
+  body {
+    font-size: 20px;
   }
 }
