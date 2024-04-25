@@ -209,14 +209,18 @@ h4:hover{
 } 
 
 @media only screen and (max-width: 768px) {
-    .container {
+    .box {
         flex-direction: column;
     }
 
-    .slide-container,
-    .form {
+    
+   .form {
         flex: auto;
         width: 100%;
+    }
+
+   section  .slide-container{
+    width: 335px;
     }
 }
 
