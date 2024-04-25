@@ -220,7 +220,12 @@ h4:hover{
     }
 
    section  .slide-container{
-    width: 335px;
+    width: 300px;
+    }
+
+    .card-book , .listLivros {
+      padding: 10px;
+
     }
 }
 
