@@ -82,7 +82,7 @@ h4:hover{
 
 .banner{
   height: 80vh;
-  width: auto;
+  width: 100%;
   background-image: url(../img/8661379.jpg);
   background-position: center;
   background-repeat: no-repeat;
