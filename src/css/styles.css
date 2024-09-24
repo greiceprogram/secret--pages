@@ -8,23 +8,84 @@
     font-family: "Libre Baskerville", serif;
 }
 
+
+@media (max-height: 800px){
+  header{
+    padding-top: 40px;
+  }
+
+  .banner {
+    text-align: center; 
+  }
+
+  .banner h1 {
+    font-size: 50px; 
+  }
+
+  .container-about .about-content h2{
+    font-size: 24px;
+  }
+  footer{
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .banner h1 {
+    word-break: break-all;
+    font-size: 15px; 
+  }
+  .box {
+      flex-direction: column;
+  }
+
+  .card-container-two{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+ .form {
+      flex: auto;
+      width: 100%;
+  }
+
+ section  .slide-container{
+  width: 300px;
+  }
+
+  .card-book , .listLivros {
+    padding: 5px;
+
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .footer-distributed .footer-left {
+    order: 1; 
+  }
+
+  .footer-distributed .footer-right {
+    order: 2; 
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+
+  body {
+    font-size: 20px;
+  }
+}
+
 body{
   background-color: #f9f9f9;
-  /* cursor:url(../img/diar), auto; */
-}
-
-.container{
-  max-width: 1280px;
-  margin: auto;
-}
-
-.flex{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.flex img{
-  width: 80px;
 }
 
 header{
@@ -35,8 +96,6 @@ header{
   left: 0;
   transition: 0.5s;
 }
-
-
 header.rolagem a, header.rolagem i{
   color:black
 }
@@ -80,6 +139,19 @@ h4:hover{
   cursor: pointer;
 }
 
+.container{
+  max-width: 1280px;
+  margin: auto;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex img{
+  width: 80px;
+}
+
 .banner{
   height: 80vh;
   width: 100%;
@@ -96,11 +168,11 @@ h4:hover{
 
 .banner h1{
   color: black;
-  font-size: 3rem;
-  white-space: nowrap;
-  overflow: hidden;
+  font-size: 45px;
+  word-break: break-word;
+  /* overflow: hidden; */
   border-radius: 2px solid black;
-  padding-left: 35%;
+  padding-left: 30%;
 } 
 
 .banner h1 span{
@@ -149,38 +221,38 @@ h4:hover{
   line-height: 1.6;
 }
 .card-container-two {
-  display: flex;              /* Coloca os cards lado a lado */
-  justify-content: space-between; /* Adiciona espaço entre os cards */
+  display: flex;  
+  justify-content: space-between; 
   gap: 20px;  
-  padding: 20px;                /* Espaçamento entre os cards */
+  padding: 20px;               
 }
 
 .card-two-1{
-  background-color: #f4f4f4;  /* Cor de fundo do card */
-  padding: 30px;              /* Espaçamento interno */
-  border-radius: 10px;        /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  flex: 1;                    /* Faz com que os cards tenham a mesma largura */
+  background-color: #f4f4f4;  
+  padding: 30px;              
+  border-radius: 10px;        
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  flex: 1;                   
   max-width: 300px;       
   position: relative;
 }
 .SOBREPOR{
   width: 100px;
   height: 100px;
-  background-color: rgba(255, 0, 0, 0.7); /* Fundo semi-transparente */
-  position: absolute; /* Posiciona em relação à div .fundo */
-  top: 0; /* Alinha ao topo */
-  right: 0; /* Alinha à direita */
-  border-radius: 50%; /* Deixa a div redonda */
-  z-index: 10; /* Garante que ela fique na frente */
+  background-color: rgba(255, 0, 0, 0.7); 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border-radius: 50%;
+  z-index: 10; 
 }
 .SOBREPOR  p{
-  display: flex; /* Ativa o flexbox */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  color: white; /* Muda a cor do texto para branco */
-  font-weight: bold; /* Deixa o texto em negrito */
-  text-align: center; /* Garante que o texto fique centralizado se houver mais de uma linha */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: white; 
+  font-weight: bold; 
+  text-align: center; 
   padding: 50px;
   margin: 15px;
 }
@@ -194,12 +266,12 @@ h4:hover{
 }
 
 .card-two-1 {
-  background-color: #f4f4f4;  /* Cor de fundo do card */
-  padding: 30px;              /* Espaçamento interno */
-  border-radius: 10px;        /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  flex: 1;                    /* Faz com que os cards tenham a mesma largura */
-  max-width: 300px;            /* Limita a largura máxima do card */
+  background-color: #f4f4f4; 
+  padding: 30px;             
+  border-radius: 10px;       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  flex: 1;                   
+  max-width: 350px;           
 }
 
 .card-container-two img{
@@ -222,7 +294,7 @@ h4:hover{
 .card-two-1 p {
   padding: 5px;
   margin: 15px;
-  font-size: 1rem;            /* Define o tamanho da fonte */
+  font-size: 1rem;  
 }
 
 .about-image img {
@@ -273,28 +345,6 @@ h4:hover{
 .listLivros span{
   color: red;
 } 
-
-@media only screen and (max-width: 768px) {
-    .box {
-        flex-direction: column;
-    }
-
-    
-   .form {
-        flex: auto;
-        width: 100%;
-    }
-
-   section  .slide-container{
-    width: 300px;
-    }
-
-    .card-book , .listLivros {
-      padding: 5px;
-
-    }
-}
-
 
   .box{
     min-height: 50vh;
@@ -422,27 +472,6 @@ h4:hover{
     bottom: 0;
   }
 
-  @media (max-height: 800px) {
-    footer{
-      position: static;
-    }
-    header{
-      padding-top: 40px;
-    }
-
-    .banner {
-      text-align: center; 
-    }
-  
-    .banner h1 {
-      font-size: 50px; 
-    }
-
-    .container-about .about-content h2{
-      font-size: 24px;
-    }
-  }
-
   .footer-distributed{
     background-color: #f9f9f9;
     box-sizing: border-box;
@@ -543,27 +572,3 @@ h4:hover{
   color: red;
 }
 
-
-@media screen and (max-width: 880px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
-    width: 100%;
-    text-align: center; 
-    margin-bottom: 20px; 
-  }
-
-  .footer-distributed .footer-left {
-    order: 1; 
-  }
-
-  .footer-distributed .footer-right {
-    order: 2; 
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-
-  body {
-    font-size: 20px;
-  }
-}
