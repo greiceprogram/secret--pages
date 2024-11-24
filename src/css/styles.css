@@ -75,12 +75,13 @@ h4:hover{
 }
 .flex img{
   width: 80px;
+  border-radius: 150px;
 }
 
 .banner{
   height: 80vh;
   width: 100%;
-  background-image: url(../img/8661379.jpg);
+  background-image: url(../img/v844-aew-65.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,11 +147,15 @@ h4:hover{
   line-height: 1.6;
 }
 
+.autor img{
+  width: 150px;
+  border-radius: 150px;
+  border: 1px solid red;
+}
+
 .card-container-two {
   display: flex;  
-  justify-content:space-between; 
-  gap: 10px;  
-  padding: 20px;               
+  justify-content:center;            
 }
 
 .card-two-1{
@@ -164,8 +169,8 @@ h4:hover{
 }
 
 .SOBREPOR{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: rgba(255, 0, 0, 0.7); 
   position: absolute; 
   top: 0; 
@@ -203,7 +208,7 @@ h4:hover{
 
 .card-container-two img{
   align-content: center;
-  width: 180px;
+  width: 140px;
   border-radius: 15px;
   filter: drop-shadow(0 50px 20px #1d1819);
 }
@@ -221,7 +226,7 @@ h4:hover{
 .card-two-1 p {
   padding: 5px;
   margin: 15px;
-  font-size: 1rem;  
+  font-size: 12px;  
 }
 
 .about-image img {
