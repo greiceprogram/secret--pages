@@ -1,8 +1,9 @@
 # Páginas Secretas
 
-Explorando histórias de amor e desejo.
+A Chave para a Satisfação: Amar o Que Você Faz.
 
-"Bem-vindo ao espaço onde a paixão encontra a imaginação. Mergulhe em contos sensuais, romances ardentes e histórias provocantes, criados para despertar os sentidos e celebrar o erotismo literário."
+"Seu trabalho vai preencher uma grande parte da sua vida, e a única maneira de estar realmente satisfeito é fazendo o que você acredita ser um ótimo trabalho.
+E a única maneira de fazer um ótimo trabalho é amar o que você faz."
 
 ## Sobre o Blog
 
